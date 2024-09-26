@@ -76,7 +76,7 @@
   </div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop px-6">
     <h1 class="title has-text-centered">Speakers</h1>
     <p>
@@ -127,59 +127,75 @@
       </table>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="section">
   <div class="container is-max-desktop px-6">
-    <h1 class="title has-text-centered">Talks</h1>
+    <!-- <h1 class="title has-text-centered">Talks</h1> -->
+
+    <hr>
 
     <h2 class="title is-4">Monday 28th</h2>
+
     <ul class="px-6">
       <li id="robert-pare">
         <h4 class="title is-5">Some things about double categories</h4>
         <h4 class="subtitle is-5 mb-0"><a href="https://www.mscs.dal.ca/~pare/">Robert Paré</a></h4>
         <h4 class="subtitle is-6 mb-2">Dalhousie University</h4>
-        <div class="has-text-justified">
-          <p>
-            The title says it all. I will look at some examples as an excuse to introduce and motivate the basic concepts of double category theory. This way I hope to bring them to life so that, in the end, they might be considered as friends and not mere acquaintances (or worse). No prior knowledge of double categories will be assumed.
-          </p>
+        <div class="container mb-2">
+          <a href="slides/robert-pare.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=ArC7wBqHp5Q"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/robert-pare.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=ArC7wBqHp5Q"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="has-text-justified">
+          <button class="button is-small" onclick="toggleAbstract(this)">Show abstract +</button>
+          <div style="display: none;" class="mt-2">
+            <p>
+              The title says it all. I will look at some examples as an excuse to introduce and motivate the basic concepts of double category theory. This way I hope to bring them to life so that, in the end, they might be considered as friends and not mere acquaintances (or worse). No prior knowledge of double categories will be assumed.
+            </p>
+          </div>
         </div>
       </li>
+
       <li id="matthew-di-meglio" class="mt-6">
         <h4 class="title is-5">Recognising retromorphisms retrospectively</h4>
         <h4 class="subtitle is-5 mb-0"><a href="https://mdimeglio.github.io/">Matthew Di Meglio</a></h4>
         <h4 class="subtitle is-6 mb-2">University of Edinburgh</h4>
-        <div class="has-text-justified">
-          <p class="mb-2">
-            What do categories, preordered sets, metric spaces, and topological spaces have in common? They all have an underlying set, and, when viewed in the right way, they all have some additional data that relates the elements of the underlying set. For each of these kinds of mathematical objects, there are two natural kinds of morphisms. The usual kind of morphisms, which we will refer to merely as morphisms, consist of a function between the underlying sets, and a mapping of the additional data in the same direction as the function. For example, functors and continuous maps are morphisms of categories and topological spaces, respectively. The other kind of morphisms, which we will refer to as retromorphisms, consist of a function between the underlying sets, and a lifting of the additional data in the opposite direction to that of the function. For example, cofunctors and open maps are retromorphisms of categories and topological spaces, respectively. In all cases, the morphisms and retromorphisms assemble into a double category whose cells capture a notion of compatibility between the two kinds of morphisms.
-          </p>
-          <p>
-            Actually, for any double category with chosen companions, there is an associated double category of monad morphisms and monad retromorphisms, and all of the above examples arise in this way. My talk will give a gentle introduction to these double-categorical concepts, focusing on how the above examples and several more fit into the general theory. No prior knowledge about double categories will be assumed. This extends recent work (arXiv:2209.01144) on enriched cofunctors beyond the setting of enriched category theory.
-          </p>
+        <div class="container mb-2">
+          <a href="slides/matthew-di-meglio.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=zJL0MlX-uxs"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/matthew-di-meglio.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=zJL0MlX-uxs"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="has-text-justified">
+          <button class="button is-small" onclick="toggleAbstract(this)">Show abstract +</button>
+          <div style="display: none;" class="mt-2">
+            <p class="mb-2">
+              What do categories, preordered sets, metric spaces, and topological spaces have in common? They all have an underlying set, and, when viewed in the right way, they all have some additional data that relates the elements of the underlying set. For each of these kinds of mathematical objects, there are two natural kinds of morphisms. The usual kind of morphisms, which we will refer to merely as morphisms, consist of a function between the underlying sets, and a mapping of the additional data in the same direction as the function. For example, functors and continuous maps are morphisms of categories and topological spaces, respectively. The other kind of morphisms, which we will refer to as retromorphisms, consist of a function between the underlying sets, and a lifting of the additional data in the opposite direction to that of the function. For example, cofunctors and open maps are retromorphisms of categories and topological spaces, respectively. In all cases, the morphisms and retromorphisms assemble into a double category whose cells capture a notion of compatibility between the two kinds of morphisms.
+            </p>
+            <p>
+              Actually, for any double category with chosen companions, there is an associated double category of monad morphisms and monad retromorphisms, and all of the above examples arise in this way. My talk will give a gentle introduction to these double-categorical concepts, focusing on how the above examples and several more fit into the general theory. No prior knowledge about double categories will be assumed. This extends recent work (arXiv:2209.01144) on enriched cofunctors beyond the setting of enriched category theory.
+            </p>
+          </div>
         </div>
       </li>
+
       <li id="paula-verdugo" class="mt-6">
         <h4 class="title is-5">An homotopical way to compare 2-categories and double categories</h4>
         <h4 class="subtitle is-5 mb-0">Paula Verdugo</h4>
         <h4 class="subtitle is-6 mb-2">Macquarie University</h4>
-        <div class="has-text-justified">
-          <p>
-            It has proven useful to study some aspects of 2-categories within the framework of double categories – for example, there are some 2-categorical universal properties that elude a purely 2-categorical description but show themselves naturally expressed in the double categorical world. In this talk we present ways to compare these two 2-dimensional worlds homotopically by means of model categories. If time permits, we will explore how we may generalize this idea to higher dimensions. This is joint work with Lyne Moser and Maru Sarazola. Basic knowledge about (2- and double) categories will be useful, together with the idea behind model categories.
-          </p>
+        <div class="container mb-2">
+          <a href="slides/paula-verdugo.pdf"><button class="button is-small is-link is-light">Slides</button></a>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/paula-verdugo.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
+        <div class="has-text-justified">
+          <button class="button is-small" onclick="toggleAbstract(this)">Show abstract +</button>
+          <div style="display: none;" class="mt-2">
+            <p>
+              It has proven useful to study some aspects of 2-categories within the framework of double categories – for example, there are some 2-categorical universal properties that elude a purely 2-categorical description but show themselves naturally expressed in the double categorical world. In this talk we present ways to compare these two 2-dimensional worlds homotopically by means of model categories. If time permits, we will explore how we may generalize this idea to higher dimensions. This is joint work with Lyne Moser and Maru Sarazola. Basic knowledge about (2- and double) categories will be useful, together with the idea behind model categories.
+            </p>
+          </div>
         </div>
       </li>
     </ul>
+
+    <hr>
 
     <h2 class="title is-4 mt-6">Tuesday 29th</h2>
     <ul class="px-6">
@@ -187,71 +203,88 @@
         <h4 class="title is-5">Formalising size in formal category theory</h4>
         <h4 class="subtitle is-5 mb-0"><a href="https://www.ncc.metu.edu.tr/seerp-roald-koudenburg">Seerp Roald Koudenburg</a></h4>
         <h4 class="subtitle is-6 mb-2">Middle East Technical University, Northern Cyprus Campus</h4>
-        <div class="has-text-justified">
-          <p class="mb-2">
-            Formalising the classical notion of Yoneda embedding necessarily includes formalising the notion of "locally small functor", that is functors \(f\colon A\to C\) such that all homsets \(C(fa,c)\) are small. A Yoneda structure on a 2-category for instance includes the notion of "admissible morphism" which formalises that of locally small functor.
-          </p>
-          <p class="mb-2">
-            In a (generalised) double categorical approach to formal Yoneda embeddings, instead of postulating a notion of "locally small morphism", it is natural to regard <i>all</i> horizontal (say) morphisms to be "locally small". This gives an intrisic notion of local smallness which fruitfully interacts with other formal notions such as that of adjunct vertical morphism, fully faithful vertical morphism and restriction of horizontal morphisms.
-          </p>
-          <p>
-            The aim of this talk is to introduce a double categorical approach to formal Yoneda embeddings without presuming familiarity with formal category theory. Motivated by obtaining a common formalisation of the classical notions of generic subobject (of topos theory) and Yoneda embedding, we are led to consider "augmented virtual double categories" as the right setting for doing so. These generalise double categories by allowing cells with paths of horizontal morphisms as horizontal source and, as horizontal target, either a single horizontal morphism or an empty path. We conclude by looking at several formal results that involve formal notions of smallness such as, for instance, a description of the sense in which a formal presheaf object \(P\), defined by a formal Yoneda embedding \(y\colon A\to P\), is cocomplete.
-          </p>
+        <div class="container mb-2">
+          <a href="slides/seerp-roald-koudenburg.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=FAtXvtRhMFU"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/seerp-roald-koudenburg.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=FAtXvtRhMFU"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="has-text-justified">
+          <button class="button is-small" onclick="toggleAbstract(this)">Show abstract +</button>
+          <div style="display: none;" class="mt-2">
+            <p class="mb-2">
+              Formalising the classical notion of Yoneda embedding necessarily includes formalising the notion of "locally small functor", that is functors \(f\colon A\to C\) such that all homsets \(C(fa,c)\) are small. A Yoneda structure on a 2-category for instance includes the notion of "admissible morphism" which formalises that of locally small functor.
+            </p>
+            <p class="mb-2">
+              In a (generalised) double categorical approach to formal Yoneda embeddings, instead of postulating a notion of "locally small morphism", it is natural to regard <i>all</i> horizontal (say) morphisms to be "locally small". This gives an intrisic notion of local smallness which fruitfully interacts with other formal notions such as that of adjunct vertical morphism, fully faithful vertical morphism and restriction of horizontal morphisms.
+            </p>
+            <p>
+              The aim of this talk is to introduce a double categorical approach to formal Yoneda embeddings without presuming familiarity with formal category theory. Motivated by obtaining a common formalisation of the classical notions of generic subobject (of topos theory) and Yoneda embedding, we are led to consider "augmented virtual double categories" as the right setting for doing so. These generalise double categories by allowing cells with paths of horizontal morphisms as horizontal source and, as horizontal target, either a single horizontal morphism or an empty path. We conclude by looking at several formal results that involve formal notions of smallness such as, for instance, a description of the sense in which a formal presheaf object \(P\), defined by a formal Yoneda embedding \(y\colon A\to P\), is cocomplete.
+            </p>
+          </div>
         </div>
       </li>
+
       <li id="christina-vasilakopoulou" class="mt-6">
         <h4 class="title is-5">Monoidal Kleisli double categories</h4>
         <h4 class="subtitle is-5 mb-0"><a href="http://www.math.ntua.gr/~cvasilak/">Christina Vasilakopoulou</a></h4>
         <h4 class="subtitle is-6 mb-2">National Technical University of Athens, School of Applied Mathematics and Physical Sciences</h4>
-        <div class="has-text-justified">
-          <p>
-            In this talk, we will describe how to formally extend the so-called arithmetic product of symmetric sequences to colored symmetric sequences, namely their many-object analogue. This requires general results on extending monoidal structures to Kleisli constructions, specifically in the world of double categories. Some basic knowledge of fibrant double categories is assumed, but involved concepts and tools shall be in general described throughout the talk.
-          </p>
+        <div class="container mb-2">
+          <a href="slides/christina-vasilakopoulou.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=1C-XEFf_BW8"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/christina-vasilakopoulou.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=1C-XEFf_BW8"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="has-text-justified">
+          <button class="button is-small" onclick="toggleAbstract(this)">Show abstract +</button>
+          <div style="display: none;" class="mt-2">
+            <p>
+              In this talk, we will describe how to formally extend the so-called arithmetic product of symmetric sequences to colored symmetric sequences, namely their many-object analogue. This requires general results on extending monoidal structures to Kleisli constructions, specifically in the world of double categories. Some basic knowledge of fibrant double categories is assumed, but involved concepts and tools shall be in general described throughout the talk.
+            </p>
+          </div>
         </div>
       </li>
+
       <li id="bojana-femic" class="mt-6">
         <h4 class="title is-5">Gray-type monoidal product and Bifunctor Theorem for double categories</h4>
         <h4 class="subtitle is-5 mb-0"><a href="http://www.mi.sanu.ac.rs/~bfemic/">Bojana Femić</a></h4>
         <h4 class="subtitle is-6 mb-2">Mathematical Institute of Serbian Academy of Sciences and Arts</h4>
-        <div class="has-text-justified">
-          <p>
-            In the introductory part we will recall what double categories are and we will show some examples that illustrate why double categories present a more suitable framework to work in than bicategories. We proceed by describing the construction of a Gray type monoidal product for double categories for two versions of morphisms: strict and lax double functors. Along the way we characterize (lax double) quasi-functors(in analogy to  "quasi-functors of two variables" for 2-categories of Gray). We introduce their 2-category \(q\text{-}\operatorname{Lax}_{hop}(\mathbb{A}\times\mathbb{B},\mathbb{C})\) and construct a 2-functor \(\mathcal{F}: q\text{-}\operatorname{Lax}_{hop}(\mathbb{A}\times\mathbb{B},\mathbb{C}) \to \operatorname{Lax}_{hop}(\mathbb{A}\times\mathbb{B},\mathbb{C})\) to the 2-category of lax double bifunctors. This is a double category version of the Bifunctor Theorem, recently proved for 2-categories. We will show when this 2-functor \(\mathcal{F}\) restricts to a 2-equivalence. For a consequence we derive 2-functors known as currying and uncurrying functors in Computer Science, in the context of double categories. We finish by showing the application of the 2-functor \(\mathcal{F}\) on 2-monads. Concretely: we obtain that \(\mathcal{F}\) is a generalization to non-trivial double categories of the classical Beck's result, that a distributive law between two monads makes it possible for them to compose. It turns out that a distributive law is a specification of a (lax double) quasi-functor to trivial double categories. No prior knowledge of double categories is necessary, but knowing 2-categories, their functors, transformations and modifications is helpful.
-          </p>
+        <div class="container mb-2">
+          <a href="slides/bojana-femic.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=O_XBfDsYILQ"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/bojana-femic.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=O_XBfDsYILQ"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="has-text-justified">
+          <button class="button is-small" onclick="toggleAbstract(this)">Show abstract +</button>
+          <div style="display: none;" class="mt-2">
+            <p>
+              In the introductory part we will recall what double categories are and we will show some examples that illustrate why double categories present a more suitable framework to work in than bicategories. We proceed by describing the construction of a Gray type monoidal product for double categories for two versions of morphisms: strict and lax double functors. Along the way we characterize (lax double) quasi-functors(in analogy to  "quasi-functors of two variables" for 2-categories of Gray). We introduce their 2-category \(q\text{-}\operatorname{Lax}_{hop}(\mathbb{A}\times\mathbb{B},\mathbb{C})\) and construct a 2-functor \(\mathcal{F}: q\text{-}\operatorname{Lax}_{hop}(\mathbb{A}\times\mathbb{B},\mathbb{C}) \to \operatorname{Lax}_{hop}(\mathbb{A}\times\mathbb{B},\mathbb{C})\) to the 2-category of lax double bifunctors. This is a double category version of the Bifunctor Theorem, recently proved for 2-categories. We will show when this 2-functor \(\mathcal{F}\) restricts to a 2-equivalence. For a consequence we derive 2-functors known as currying and uncurrying functors in Computer Science, in the context of double categories. We finish by showing the application of the 2-functor \(\mathcal{F}\) on 2-monads. Concretely: we obtain that \(\mathcal{F}\) is a generalization to non-trivial double categories of the classical Beck's result, that a distributive law between two monads makes it possible for them to compose. It turns out that a distributive law is a specification of a (lax double) quasi-functor to trivial double categories. No prior knowledge of double categories is necessary, but knowing 2-categories, their functors, transformations and modifications is helpful.
+            </p>
+          </div>
         </div>
       </li>
+      
       <li id="brandon-shapiro" class="mt-6">
         <h4 class="title is-5"> Double Presheaf Categories via Polynomial Functors</h4>
         <h4 class="subtitle is-5 mb-0"><a href="http://pi.math.cornell.edu/~bts82/">Brandon Shapiro</a></h4>
         <h4 class="subtitle is-6 mb-2">Topos Institute</h4>
-        <div class="has-text-justified">
-          <p class="mb-2">
-            The category Poly of polynomial functors on sets and natural transformations between them forms a monoidal category under composition. By results of Ahman–Uustalu and Garner, the bicategory of comonoids and bicomodules in Poly has as objects small categories and as morphisms from C to D familial (aka parametric right adjoint) functors from C-Set to D-Set, the categories of Set-valued functors from C and D. Familial functors between (co)presheaf categories are defined as disjoint unions of representables on each component, and include the free category monad on graphs and data migration functors between categories of databases.
-          </p>
-          <p class="mb-2">
-            Polynomial functors on categories also have a monoidal structure by composition, where the comonoids are precisely small double categories satisfying a factorization condition that includes most double categories in common use. Bicomodules between such double categories \(\bf C\) and \(\bf D\) induce "familial" double functors from \({\bf C}^t\)-Set to \({\bf D}^t\)-Set, the copresheaf double categories of lax double functors from the transpose of \(\bf C\) and \(\bf D\) to the double category of sets, functions, spans, and maps of spans.
-          </p>
-          <p>
-            I will introduce polynomial functors, comonoids and bicomodules, familial functors, and double copresheaf categories to build up to this result (joint with David Spivak) and its early implications for double category theory and categorical databases, assuming background only in double categories and ordinary (co)presheaf categories.
-          </p>
+        <div class="container mb-2">
+          <a href="slides/brandon-shapiro.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=dupq7VFp_Xk"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/brandon-shapiro.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=dupq7VFp_Xk"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="has-text-justified">
+          <button class="button is-small" onclick="toggleAbstract(this)">Show abstract +</button>
+          <div style="display: none;" class="mt-2">
+            <p class="mb-2">
+              The category Poly of polynomial functors on sets and natural transformations between them forms a monoidal category under composition. By results of Ahman–Uustalu and Garner, the bicategory of comonoids and bicomodules in Poly has as objects small categories and as morphisms from C to D familial (aka parametric right adjoint) functors from C-Set to D-Set, the categories of Set-valued functors from C and D. Familial functors between (co)presheaf categories are defined as disjoint unions of representables on each component, and include the free category monad on graphs and data migration functors between categories of databases.
+            </p>
+            <p class="mb-2">
+              Polynomial functors on categories also have a monoidal structure by composition, where the comonoids are precisely small double categories satisfying a factorization condition that includes most double categories in common use. Bicomodules between such double categories \(\bf C\) and \(\bf D\) induce "familial" double functors from \({\bf C}^t\)-Set to \({\bf D}^t\)-Set, the copresheaf double categories of lax double functors from the transpose of \(\bf C\) and \(\bf D\) to the double category of sets, functions, spans, and maps of spans.
+            </p>
+            <p>
+              I will introduce polynomial functors, comonoids and bicomodules, familial functors, and double copresheaf categories to build up to this result (joint with David Spivak) and its early implications for double category theory and categorical databases, assuming background only in double categories and ordinary (co)presheaf categories.
+            </p>
+          </div>
         </div>
       </li>
     </ul>
+
+    <hr>
 
     <h2 class="title is-4 mt-6">Wednesday 30th</h2>
     <ul class="px-6">
@@ -267,9 +300,9 @@
             Single-object double categories are much simpler than their more general counterparts. I expect that most of the talk will be accessible to anyone with even a surface understanding of monoidal categories, and in particular their string diagrams.
           </p>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/chad-nester.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=OWw2zCRYCXg"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/chad-nester.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=OWw2zCRYCXg"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
       <li id="john-bourke" class="mt-6">
@@ -281,9 +314,9 @@
             Orthogonal factorisation systems are a simple and natural categorical structure that is not hard to grasp. Algebraic weak factorisation systems, which generalise the orthogonal ones, are not so straightforward, involving monads and comonads and quite a lot of structure to keep track of. However these structures can be approached via double categories and this double-categorical perspective is very useful. I will tell a bit of the story of the double-categorical approach to these structures.
           </p>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/john-bourke.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=Zz8NXrDzac4"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/john-bourke.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=Zz8NXrDzac4"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
       <li id="nicolas-behr" class="mt-6">
@@ -295,9 +328,9 @@
             Reporting on recent results of joint work with R. Harmer, P.-A. Melliès and N. Zeilberger, I will present a novel formalization of compositional rewriting theory via double categories. For a given rewriting theory, individual rewriting steps are formalized as 2-cells of a double category. One of the crucial aspects of compositionally consists then in providing a set of axioms that the double category of the rewriting system must satisfy in order to ensure the existence of concurrency and associativity theorems., which are quintessential for developing important applications of rewriting systems such as In combinatorics and Markov chain theory. Another concept central to this end, I.e., “counting modulo universal properties”, may be implemented via a certain presheaf and coend calculus. Time permitting, I will sketch how the counting calculus then leads to a categorification of the concept of rule algebras (which capture the combinatorics of interactions of rewriting steps).
           </p>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/nicolas-behr.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=wggiCsXFgsI"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/nicolas-behr.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=wggiCsXFgsI"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
       <li id="susan-niefield" class="mt-6">
@@ -312,12 +345,14 @@
             We will assume some familiarity with double categories, but recall the definitions and properties of adjoints on double categories, as well as the relevant examples.
           </p>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/susan-niefield.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=O8mw3W70f1E"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/susan-niefield.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=O8mw3W70f1E"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
     </ul>
+
+    <hr>
 
     <h2 class="title is-4 mt-6">Thursday 1st</h2>
     <ul class="px-6">
@@ -330,9 +365,9 @@
             Universal properties play an important role in mathematics, as they allow us to make many constructions such as (co)limits, Kan extensions, adjunctions, etc. In particular, a universal property is often formulated by requiring that a certain presheaf is representable. The representation theorem gives a useful characterization of these representable presheaves in terms of initial objects in their category of elements. Going one dimension up and considering 2-categories, with tslil clingman we showed that the same results is true for Cat-valued presheaves if one considers their "double category of elements". In this talk, I will explain how to generalize the representation theorem to the more general framework of V-enriched categories, where V is a cartesian closed category. This is joint work with Maru Sarazola, and Paula Verdugo. Only basic knowledge of ordinary category theory will be assumed.
           </p>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/lyne-moser.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=RBngz7WXaJw"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/lyne-moser.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=RBngz7WXaJw"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
       <li id="simona-paoli" class="mt-6">
@@ -347,8 +382,8 @@
             I will illustrate a direct comparison of fair 2-categories with weakly globular double categories: this result sheds new light on the notion of weak globularity as encoding weak units and has potential for higher dimensional generalizations.
           </p>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/simona-paoli.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
+        <div class="container mb-2">
+          <a href="slides/simona-paoli.pdf"><button class="button is-small is-link is-light">Slides</button></a>
         </div>
       </li>
       <li id="juan-orendain" class="mt-6">
@@ -363,9 +398,9 @@
             Globularly generated double categories are minimal solutions to lifting problems of bicategories into double categories along given categories of vertical arrows. Globularly generated double categories form a coreflective sub-2-category of general double categories. This, together with an analysis of the internal structure of globularly generated double categories yields a numerical invariant on general double categories. We call this number the vertical length. The vertical length of a double category C measures the complexity of compositions of globular and horizontal identity squares of C and thus provides a measure of complexity for lifting problems on the horizontal bicategory of C. I will explain recent results on the theory of globularly generated double categories and the vertical length invariant. Minimal knowledge of double categories and bicategories will be assumed.
           </p>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/juan-orendain.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=K-Ny3LybUGM"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/juan-orendain.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=K-Ny3LybUGM"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
       <li id="dorette-pronk" class="mt-6">
@@ -411,12 +446,14 @@
             </li>
           </ul>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/dorette-pronk.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=tg2v949w2AM"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/dorette-pronk.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=tg2v949w2AM"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
     </ul>
+
+    <hr>
 
     <h2 class="title is-4 mt-6">Friday 2nd</h2>
     <ul class="px-6">
@@ -460,9 +497,9 @@
             </li>
           </ul>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/claudio-pisani.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=RwcdFkIE9g4"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/claudio-pisani.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=RwcdFkIE9g4"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
       <li id="matteo-capucci" class="mt-6">
@@ -474,9 +511,9 @@
             Myers' categorical system theory is a double categorical yoga for describing the compositional structure of open dynamical systems. It unifies and builds on previous work on operadic notions of system theory, and provides a strong conceptual scaffolding for behavioral system theory. However, some of the most interesting systems out have a richer compositional structure than that of dynamical systems. These are cybernetic systems, or in other words, interactive control systems. Notable and motivating examples are strategic games and machine learning models. In this talk I’m going to introduce the tools and language of categorical system theory and outline how categorical cybernetics theory might look like. At the end, we will briefly venture into the triple dimension.
           </p>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/matteo-capucci.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=wtgfyjFIHBQ"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/matteo-capucci.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=wtgfyjFIHBQ"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
       <li id="david-jaz-myers" class="mt-6">
@@ -497,9 +534,9 @@
             We will show that in this guise, the Para construction arises as a (pseudo)distributive law between the action double category of \(\otimes : M \times C \to C\) and the double category of arrows of \(C\), each seen as (pseudo)monads in a tricategory of spans in \(\mathsf{Cat}\). Our construction is abstract and applies in any suitably complete 2-category \(\mathbb{K}\), in particular in the 2-category of double categories with vertical transformations. This lets us construct a triple category \(\mathrm{Para}(\mathrm{Arena})\) whose morphisms are lenses, charts, and parameterized lenses respectively. The cubes in this triple category give representable behaviors of Capucci-Gavranovic-Hedges-Rischel cybernetic systems, and one of the resulting face double categories is a variant of Shapiro and Spivak's double category \(\mathbb{O}\mathrm{rg}\). The method of proof also suggests generalizing the domain of the Para construction to take any "dependent actegory", and at this level of generality the double category of spans in a cartesian category is revealed to be a sort of Para construction.
           </p>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/david-jaz-myers.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=zB_ifewP8Yk"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/david-jaz-myers.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=zB_ifewP8Yk"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
       <li id="michael-lambert" class="mt-6">
@@ -511,9 +548,9 @@
             How can we tell whether a double category is a double category of relations on a regular category? Any such double category is at least an equipment and is cartesian, but what else is needed? This talk aims to present a characterization theorem that describes these further conditions. This result should be seen as a double-categorical version of the development due to Carboni and Walters that showed which bicategories occur as bicategories of relations on a regular category. This talk should be accessible to anyone who knows the basics of bicategories and double categories. Along the way, we will review the work of Carboni and Walters, and define what it means for a double category to be cartesian and to be an equipment. We will also talk about tabulators and in what way a double category can be seen as "functionally complete".
           </p>
         </div>
-        <div class="container has-text-centered">
-          <a href="slides/michael-lambert.pdf"><button class="button is-link is-light is-6 mt-4 mx-5">Slides</button></a>
-          <a href="https://www.youtube.com/watch?v=dFeRjejLAIs"><button class="button is-link is-light is-6 mt-4 mx-5">YouTube</button></a>
+        <div class="container mb-2">
+          <a href="slides/michael-lambert.pdf"><button class="button is-small is-link is-light">Slides</button></a>
+          <a href="https://www.youtube.com/watch?v=dFeRjejLAIs"><button class="button is-small is-link is-light">YouTube</button></a>
         </div>
       </li>
     </ul>
@@ -527,6 +564,21 @@
     </p>
   </div>
 </footer>
+
+<script type="text/javascript">
+  function toggleAbstract(button) {
+    // WARNING: the following relies on the abstract being the *last*
+    //          element in the div
+    var abstract = button.parentElement.lastElementChild;
+    if (abstract.style.display === "none") {
+      abstract.style.display = "block";
+      button.innerHTML = "Hide abstract -";
+    } else {
+      abstract.style.display = "none";
+      button.innerHTML = "Show abstract +";
+    }
+  }
+</script>
 
 </body>
 </html>
