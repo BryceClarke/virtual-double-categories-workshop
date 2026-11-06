@@ -1,0 +1,20 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{tikz-cd}
+\usetikzlibrary{positioning}
+\begin{document}
+\[\begin{tikzcd}[row sep=small,column sep=small]
+\cdot \ar[r,"\rule{.4pt}{1.1ex}"marking] \ar[d] \ar[dr,phantom,"\mathbb{VW}"description]
+& \cdot \ar[r,"\rule{.4pt}{1.1ex}"marking] \ar[dr,phantom,"\mathbb{DC}"description]
+& \cdot \ar[d]
+\\\cdot \ar[rr,"\rule{.4pt}{1.1ex}"marking] \ar[d]
+& \phantom{\cdot} \ar[d,phantom,"2026"description]
+& \cdot \ar[d]
+\\\cdot \ar[rr,"\rule{.4pt}{1.1ex}"marking]
+& \phantom{\cdot}
+& \cdot
+\end{tikzcd}\]
+\end{document}
